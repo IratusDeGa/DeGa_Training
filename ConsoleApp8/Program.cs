@@ -23,7 +23,7 @@ class Program
                 string filePath = Path.Combine(directoryPath, fileName);
 
                 Console.WriteLine("Введите текст (для завершения введите 'exit'):");
-                using (StreamWriter writer = new StreamWriter(filePath, true))
+                using (StreamWriter writer = new StreamWriter(filePath, true)) //добавление в файл (true) через класс StreamWriter
                 {
                     string input;
                     while ((input = Console.ReadLine()) != "exit")
